@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title><ion-icon name="arrow-back" padding (click)="backwardnavigation()"></ion-icon>{{article?.title}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card>
+  <ion-img [src]="article?.urlToImage"></ion-img>
+ 
+
+<ion-card-content >
+<p>{{article?.description}}</p>
+  
+</ion-card-content>
+</ion-card>
+</ion-content>
